@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.active {
+  background-color: #bee1ff;
+  color: var(--black);
+}
+.not-active {
+  border-color: #ffffff !important;
+  background-color: transparent;
+  color: var(--white);
+}
+.main > div:nth-child(1) {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff00;
+  width: 2rem;
+  height: 2rem;
+  transition: var(--transition-01);
+}
+.main > div:nth-child(1) p {
+  font-size: calc((14 / 16) * 1rem);
+  font-weight: 600;
+}
+.main > div:nth-child(2) {
+  color: var(--white);
+  display: grid;
+}
+.main > div:nth-child(2) h2,
+.main > div:nth-child(2) h1 {
+  color: #ffffff;
+}
+.main > div:nth-child(2) h2 {
+  font-weight: lighter;
+  font-size: calc((12 / 16) * 1rem);
+}
+.main > div:nth-child(2) h1 {
+  font-weight: bolder;
+  font-size: calc((14 / 16) * 1rem);
+  letter-spacing: 0.1rem;
+}

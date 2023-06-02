@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: calc((24 / 16) * 1rem);
+  padding: 0 calc((24 / 16) * 1rem);
+  width: calc((436 / 16) * 1rem);
+  align-items: center;
+  align-self: center;
+}
+
+.main h1,
+.main p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    max-width: calc((400 / 16) * 1rem);
+    padding-top: 3rem;
+  }
+}

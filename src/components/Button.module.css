@@ -1,0 +1,72 @@
+.btn {
+  border: 2px solid #ffffff00;
+  border-radius: 0.5rem;
+  height: calc((48 / 16) * 1rem);
+  width: calc((123 / 16) * 1rem);
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  -webkit-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.btn.next {
+  background-color: var(--black);
+}
+.btn.next:active,
+.btn.confirm:active {
+  opacity: 0.8;
+}
+@media (hover: hover) {
+  .btn.next:hover,
+  .btn.confirm:hover {
+    opacity: 0.8;
+  }
+  .btn.back:hover {
+    border: 2px solid #828385;
+  }
+}
+
+.btn.back {
+  background-color: transparent;
+}
+
+.btn.back:active {
+  border: 2px solid #828385;
+}
+
+.btn.confirm {
+  background-color: var(--blue);
+}
+
+.btn.disabled {
+  background-color: var(--pale-violet);
+  cursor: not-allowed;
+}
+
+.btn p {
+  font-size: 1rem;
+}
+
+.btn.next p {
+  color: var(--white);
+}
+.btn.back p {
+  color: var(--grey-para);
+}
+.btn.disabled p {
+  color: var(--grey-para);
+}
+.btn.confirm p {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    height: calc((38 / 16) * 1rem);
+    width: calc((100 / 16) * 1rem);
+    border-radius: 0.75rem;
+  }
+}

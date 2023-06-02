@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main > ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

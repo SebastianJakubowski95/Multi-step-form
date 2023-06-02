@@ -1,0 +1,37 @@
+.main,
+.main > div:nth-of-type(1) {
+  border-radius: 0.75rem;
+}
+.main {
+  background-color: var(--black);
+  width: calc((42 / 16) * 1rem);
+  height: calc((20 / 16) * 1rem);
+  padding: 0 calc((4 / 16) * 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-02);
+  cursor: pointer;
+}
+
+.left {
+  transform: translateX(-11px);
+  -webkit-transform: translateX(-11px);
+  -ms-transform: translateX(-11px);
+}
+.right {
+  transform: translateX(11px);
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+}
+
+.main > div:nth-child(1) {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: calc((13 / 16) * 1rem);
+  height: calc((13 / 16) * 1rem);
+  transition: var(--transition-02);
+}
+.main:active > div:nth-child(1) {
+  scale: 1.1;
+}

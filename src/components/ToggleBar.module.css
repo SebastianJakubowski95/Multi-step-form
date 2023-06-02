@@ -1,0 +1,25 @@
+.main {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  border-radius: calc((12 / 16) * 1rem);
+  background-color: #f8f9fe;
+  height: calc((40 / 16) * 1rem);
+}
+.main > div {
+  display: grid;
+  grid-template-columns: repeat(3, calc((60 / 16) * 1rem));
+  gap: 1rem;
+}
+.active,
+.not-active {
+  font-size: calc((14 / 16) * 1rem);
+}
+.active {
+  color: var(--black);
+  font-weight: 600;
+}
+.not-active {
+  color: var(--grey-para);
+  font-weight: 400;
+}
